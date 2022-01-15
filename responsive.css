@@ -1,0 +1,261 @@
+#mobNav {
+  width: 100%;
+  height: 50px;
+  border: 1px rgb(190, 190, 190) solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  align-items: center;
+}
+
+#mobMenu {
+  cursor: pointer;
+}
+
+#mobLogo {
+  display: flex;
+}
+
+#mobCartAcc {
+  display: flex;
+}
+
+#mobCartAcc a {
+  display: flex;
+}
+
+#mobNav {
+  display: none;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+}
+
+/* Responsive CSS--------- */
+#mobBody {
+  display: none;
+}
+
+#deskBody {
+  display: none;
+}
+
+.topClass {
+  margin: 0px;
+}
+
+#mobBody img {
+  object-fit: cover;
+  width: 99.9%;
+}
+.gridBox1 {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3333%);
+
+  gap: 10px;
+}
+
+.gridBox2 {
+  display: flex;
+}
+.gridBox2 a:nth-child(1) {
+  margin-right: 6px;
+}
+
+/* Mobile footer section CSS */
+
+/* .sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  } */
+
+#mobFooter .nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobFooter .nav img {
+  width: 20px;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 50px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #444444;
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+
+.navLink:hover {
+  background-color: #eeeeee;
+}
+
+.navIcon {
+  font-size: 18px;
+}
+
+.mobBoxImage {
+  margin-top: 10px;
+}
+
+/* category css---------- */
+
+#catePage {
+  display: flex;
+  flex-direction: column;
+}
+#catePage img {
+  width: 99.9%;
+}
+
+.hoverTextImg {
+  margin-top: 30px;
+  height: auto;
+  position: relative;
+}
+
+.hoverText {
+  position: absolute;
+  top: 30%;
+  left: 20px;
+}
+
+.hoverText p {
+  font-size: 12px;
+}
+
+.gridBoxImg {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+}
+
+/* search box css -------*/
+
+#buttomSearch {
+  width: 100%;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+#buttomSearch input {
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+}
+#buttomSearch .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#buttomSearch .searchTerm {
+  width: 100%;
+  height: 45px;
+  border: 3px solid white;
+  border-right: none;
+  padding: 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  background-color: #bec0c0;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#mobAccount {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  text-align: center;
+}
+
+#mobAccount img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#mobAccount {
+  display: none;
+}
+
+.secAccImgBox {
+  display: flex;
+}
+.secAccImgBox a:nth-child(1) {
+  margin-right: 10px;
+}
+
+.mobAccInner{
+    padding: 10px;
+}
+
+#videoHeader {
+  width: 100%;
+  overflow: hidden;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .header {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #mobNav {
+    display: flex;
+  }
+
+  #mobBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #scrollTop {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #deskBody {
+    display: block;
+  }
+
+  #mobAccount{
+    display: none;
+  }
+  #mobBody {
+    display: none;
+  }
+
+  
+}
