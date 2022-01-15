@@ -1,0 +1,337 @@
+/* yatharth css */
+
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+}
+
+
+.maincontainer{
+    height: 100%;
+    width: 100%;
+}
+
+/* address nav */
+.navdiv{
+    height: 85px;
+    width: 100%;
+    box-shadow: rgb(204 204 204) 0px 1px 0px 0px;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 0% 12% 0% 12%;
+    box-sizing: border-box;
+}
+
+.logodiv{
+    height: 100%;
+    width: 85px;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.addhead{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: calc(50% - 200px);
+    margin-top: 40px;
+
+}
+
+.add1,
+.add2,
+.add3{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    display: flex;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.addbag,
+.addadd,
+.addpay{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    text-align: center;
+    line-height: 22px;
+    background-color: black;
+}
+
+
+.addhead::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px dashed rgb(153, 153, 153);
+    left: 0px;
+    top: 9.5px;
+}
+
+/* body css */
+
+.mainbox{
+    margin-top: 10px;
+    width: 100%;
+    height: 550px;
+    padding: 0% 12% 0% 12%;
+    display: flex; 
+    box-sizing: border-box;
+}
+
+.leftbox{
+    height: 56px;
+    width: 194px;
+    border-left: 4px solid black;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.middlebox{
+    height: 100%;
+    width: 605px;
+    padding: 0px 21px 0px 21px;
+    border: 1px solid #ccc;
+}
+
+.rightbox{
+    margin-left: 15px;
+    width: 450px;
+    height: 400px;
+    
+}
+
+.paydetail{
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 290px;
+    box-sizing: border-box;
+    padding: 0px 15px 0px 15px;
+}
+
+.payhead{
+    width: 100%;
+    height: 68px;
+    line-height: 0px;
+}
+
+.summarybox{
+    display: flex;
+    flex-direction: row;
+    height: 112px;
+    width: 100%;
+}
+
+.paylist,
+.payvalue{
+    height: 100%;
+    width: 50%;
+    font-size: 14px;
+}
+.paylist p,
+.payvalue p{
+    margin: 0;
+    padding: 4px;
+}
+
+.payvalue p{
+    float: right;
+}
+
+.paylist h4,
+.payvalue h4{
+    margin: 0;
+    padding: 4px;
+}
+
+.payvalue h4{
+    float: right;
+}
+.paylist div:nth-child(1)
+{
+    height: 25%;
+    background-color: #f8f9fa;
+}
+.paylist div:nth-child(2){
+    height: 25%;
+}
+.paylist div:nth-child(3){
+    height: 25%;
+    background-color: #f8f9fa;
+}
+.paylist div:nth-child(4){
+    height: 25%;
+    border-bottom: 1px dashed rgb(153, 153, 153);
+}
+
+.payvalue div:nth-child(1)
+{
+    height: 25%;
+    background-color: #f8f9fa;
+}
+.payvalue div:nth-child(2){
+    height: 25%;
+}
+.payvalue div:nth-child(3){
+    height: 25%;
+    background-color: #f8f9fa;
+}
+.payvalue div:nth-child(4){
+    height: 25%;
+    border-bottom: 1px dashed rgb(153, 153, 153);
+}
+
+.payfinal{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ordersave{
+    border: 1px solid #ebf6f0;
+    width: 100%;
+    height: 32px;
+    margin-top: 5px;
+    background-color: #ebf6f0;
+    padding: 0px 14px 0px 14px;
+    box-sizing: border-box;
+}
+
+.ordersave p{
+    line-height: 0px;
+    text-align: center;
+}
+
+#ptb{
+    width: 100%;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    background-color: #142636;
+    margin-top: 10px;
+    display: none;
+  }
+
+  #ptb > p{
+      color: white;
+  }
+
+/* SEARCH */
+
+.searchBoxDiv {
+    width: 100%;
+    max-width: 370px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+  }
+  
+  .searchBox {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color:#eceef0;
+    border-radius: 2px;
+    height: 30px;
+    position: relative;
+    border-bottom: 2px solid rgba(0, 19, 37, 0.16);
+    transition: border-bottom 0.2s ease 0s;
+    margin-top: 10px;
+  }
+  
+  .searchBoxInner {
+    display: flex;
+    align-items: center;
+    border: none;
+    width: 100%;
+  }
+  
+  .searchBoxInner > .input {
+    background-color: #eceef0;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    flex: 1 1 0%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    height: 30px;
+    outline: none;
+    margin-left: 10px;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+
+  #yetifsplit{
+      display: flex;
+      flex-direction: row;
+
+  }
+
+  .yemail{
+      margin-left: 10px;
+  }
+
+  .yemail,
+  .ymob{
+      width: 50%;
+  }
+
+  #saveadd{
+    width: 100%;
+    height: 45px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    background-color: #142636;
+    
+  }
+
+  #saveadd > p{
+      color: white;
+  }
+  
+
+  /* footer */
+
+  .addfoot{
+      width: 100%;
+      height: 40px;
+      margin-top: 20px;
+      background-color: #f1f0f0;
+      text-align: center;
+      align-items: center;   
+      display: flex;
+  }
+
+  .addfoot div{
+      display: flex;
+      margin: auto;
+  }
+  .addfoot span{
+    margin: auto;
+  }
+ 
