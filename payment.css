@@ -1,0 +1,243 @@
+/* address nav */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+}
+
+.navdiv{
+    height: 85px;
+    width: 100%;
+    box-shadow: rgb(204 204 204) 0px 1px 0px 0px;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    padding: 0% 12% 0% 12%;
+    box-sizing: border-box;
+
+}
+
+.logodiv{
+    height: 100%;
+    width: 85px;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.addhead{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: calc(50% - 200px);
+    margin-top: 40px;
+
+}
+
+.add1,
+.add2,
+.add3{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    display: flex;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.addbag,
+.addadd,
+.addpay{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    margin-right: 5px;
+    text-align: center;
+    line-height: 22px;
+    background-color: black;
+}
+
+
+.addhead::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px dashed rgb(153, 153, 153);
+    left: 0px;
+    top: 9.5px;
+}
+.payT{
+    padding-left:200px;
+}
+.containerPay{
+    display:flex;
+    margin-left:180px;
+    grid-area: "";
+}
+.credit-container{
+    width:300px;
+    height:334px;
+    border:1px solid lightgrey;
+}
+.credit-container1>div,.credit-container>div{
+    height:40px;
+    border-bottom: 1px solid lightgrey;
+    padding-left:25px;
+    padding-top: 15px;
+    margin-left:7px;
+    margin-right: 7px;
+}
+.bottomtext{
+    margin-top:100px;
+    text-align: center;
+    padding-top: 10px;
+    height:40px;
+    background-color:whitesmoke;
+}
+.credit-container1{
+    width:450px;
+    height:350px;
+    margin-left: 10px;
+    border:1px solid lightgrey;
+}
+.credit-container2{
+    width:350px;
+    height:400px;
+    margin-left: 10px;
+}
+.Sbox1{
+    width:350px;
+    height:210px;
+    border:1px solid lightgrey;
+    display: flex;
+    border-bottom: none;
+    background-color: rgb(221, 217, 217);
+    
+}
+.box1{
+    padding-left:30px;
+    width:280px;
+    height:250px;
+    
+}
+.box1>div{
+    margin-top: 18px;
+}
+.box2>div{
+    margin-top: 20px;
+}
+
+.box1 > div:nth-child(6) {
+    margin-top: 18px;
+}
+.box2{
+    margin-top: 40px;
+    margin-left: 50px;
+    width:150px;
+    height:210px;
+   
+}
+.Sbox2{
+    width:350px;
+    height:50px;
+    border:1px solid lightgrey;
+    border-top:1px solid lightgrey;
+    margin-bottom: 15px;
+}
+.Sbox3{
+    width:350px;
+    height:150px;
+    border:1px solid lightgrey;
+}
+.Sbox3>p{
+    padding-left:25px;
+}
+.Sbox3>h3{
+    padding-left:25px;
+}
+#shipbox{
+    color:red;
+    text-align:right;
+    padding-right:25px;
+    padding-top:70px ;
+    margin-bottom:70px;
+}
+#inputS{
+    width:400px;
+    height:70px;
+    border:1px solid white;
+    padding-left: 30px;
+    border-bottom: 1px solid lightgrey;
+    margin-left:7px;
+    outline: none;
+}
+.credit-container1>p{
+    padding-left: 30px;
+}
+.credit-container1>h3{
+    padding-left: 30px;
+}
+
+#Ssize{
+    width:50px;
+    height:30px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid lightgrey;
+}
+#payNow{
+    width:380px;
+    height:50px;
+    margin-top:5px;
+    background-color: black;
+    text-align:center;
+    color: white;
+    margin-left: 35px;
+}
+#Scolor{
+    color:grey;
+}
+
+#orderPlaced{
+    display: none;
+    width:450px;
+    height:255px;
+    margin-left: 10px;
+    border:1px solid lightgrey;
+    text-align: center;
+    color: green;
+    padding: 12px;
+    box-sizing: border-box;
+}
+#shippingInfo{
+    width: 95%;
+    margin: auto;
+    text-overflow: wrap;
+}
+#shippingInfo > *{
+    line-height: 1px;
+    margin: 15px;
+}
+#orderPlaced>h5{
+    color: grey;
+}
+#orderPlaced>*:nth-child(4){
+    color: #FD7685;
+    cursor: pointer;
+}
+
+/* dinesh see this carefully */
