@@ -1,0 +1,481 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+.header {
+  background-color: black;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.offer {
+  color: #fff;
+  width: 800px;
+  overflow: hidden;
+  font-size: 13px;
+  margin-left: 3.8%;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 28px;
+  height: 24px;
+}
+
+.subIcons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  border-bottom: 1px solid rgb(235, 237, 238);
+  background-color: white;
+}
+
+.button {
+  border: none;
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+#mobile,
+#help {
+  height: 60%;
+  margin-top: 5%;
+  transform: rotate(180deg);
+}
+
+.textM {
+  height: 100%;
+  line-height: 33px;
+  vertical-align: top;
+  font-size: 12px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#help {
+  transform: rotate(0deg);
+  margin-top: 7%;
+  height: 55%;
+  margin-left: 35px;
+}
+
+.nav {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0px 48px;
+}
+
+.menu {
+  display: flex;
+  margin-left: 48px;
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  text-decoration: none;
+  padding: 0px 18px;
+  display: flex;
+  align-items: center;
+  font-size: 12.9px;
+  color: rgb(20, 37, 54);
+  cursor: pointer;
+}
+
+.menu2 {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  color: rgb(0, 19, 37);
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.searchBoxDiv {
+  width: 100%;
+  max-width: 370px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: rgb(246, 247, 249);
+  border-radius: 2px;
+  height: 40px;
+  position: relative;
+  border-bottom: 2px solid rgba(0, 19, 37, 0.16);
+  transition: border-bottom 0.2s ease 0s;
+}
+
+.searchBoxInner {
+  display: flex;
+  align-items: center;
+  border: none;
+  width: 100%;
+}
+
+.searchBoxInner > .input {
+  background-color: rgb(246, 247, 249);
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  flex: 1 1 0%;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  height: 30px;
+  outline: none;
+  margin-left: 10px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.accountDiv {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  margin-left: 24px;
+}
+
+.itemValue {
+  position: absolute;
+  background: rgb(253, 118, 133);
+  color: rgb(255, 255, 255);
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font: 400 1rem / 1.71429rem Cera, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  left: 9px;
+  top: 0px;
+}
+
+.menu > .item:hover {
+  color: #fd7685;
+  border-bottom: 2px solid #fd7685;
+}
+
+.menu > .item:first-child:hover {
+  background-color: #eeeeee;
+  color: black;
+  border: none;
+}
+
+body {
+  background-color: whitesmoke;
+  font: size 1em;
+  font: sans-serif;
+}
+.containerSG {
+  margin-left: 200px;
+  width: 1000px;
+  height: 914px;
+  padding-top: 10px;
+  display: flex;
+}
+.gridSG {
+  overflow-y: scroll;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+.gridSG1 {
+  overflow-y: scroll;
+  margin-bottom: 80px;
+  margin-left: 20px;
+}
+.gridSG1::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.gridSG1 > div {
+  width: 610px;
+  height: 40px;
+  padding-left: 20px;
+  background-color: white;
+  border-bottom: 1px solid gainsboro;
+  padding-top: 20px;
+  margin-left: 7px;
+  padding-right: 7px;
+}
+.gridSG > div {
+  width: 280px;
+  height: 40px;
+  padding-left: 10px;
+  border-bottom: 1px solid gainsboro;
+  margin-left: 7px;
+  margin-right: 7px;
+  padding-top: 20px;
+}
+.gridSG1 > p {
+  margin-left: 20px;
+}
+.itemSG:hover {
+  background-color: gainsboro;
+}
+.material-icons {
+  font-size: 17px;
+}
+span {
+  float: right;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#line {
+  border-left: red 5px solid;
+}
+/* main div */
+#footer {
+  width: 100%;
+  height: 600px;
+}
+/* 1st div */
+#download {
+  background-color: #333;
+  padding: 1.5 rem 0;
+  height: 110px;
+}
+
+#innerDownload {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 10px;
+}
+
+#app {
+  color: #fff;
+  flex: 1 0 auto;
+}
+
+.titleApp {
+  font-size: 1 rem;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+  font-family: Cera, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#logo {
+  display: flex;
+  color: #fff;
+}
+
+.setLogo {
+  margin-right: 20px;
+}
+a {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.appAndGoogle {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 33px;
+  width: 112px;
+}
+
+.photoBoth {
+  height: 33px;
+  width: 112px;
+}
+
+.newsQueries {
+  color: #fff;
+  flex-basis: auto;
+  flex: 1 0 auto;
+  margin-top: 0 em;
+}
+
+#newsForm {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+#inputEmail {
+  border: 1px solid #999;
+  padding: 0 10px;
+  width: 187px;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0px;
+  color: #fff;
+  height: 34px;
+  background-color: #333;
+}
+
+#submitEmail {
+  color: #bec0c4;
+  border: 1p solid #999;
+  height: 36px;
+  border-left: 0;
+  line-height: 34px;
+  padding: 0 10px;
+  cursor: pointer;
+  background-color: #333;
+  font-size: 100%;
+}
+
+#queryText {
+  font-family: Cera, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+/* end first div */
+
+#whoWe {
+  background-color: #f3f2f2;
+  padding: 30px 0 39px 0;
+  font-family: Cera, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(51, 51, 51);
+}
+
+#whoWe1 {
+  display: flex;
+  max-width: 1200px;
+  font-family: Cera, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.who1 {
+  flex: 1;
+  color: #000;
+}
+
+#who2 {
+  flex: 3;
+}
+
+#who4 {
+  flex: 1;
+}
+
+.headTitle {
+  font-weight: 600;
+  margin-bottom: 21px;
+}
+
+.mainList {
+  max-height: 90px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.subList {
+  margin-bottom: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+#section3 {
+  padding: 26px 0 36px 0;
+}
+
+#contentSF {
+  display: flex;
+  max-width: 1200px;
+  font-family: inherit;
+  color: #666;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.subList2 {
+  flex: 1;
+  font-size: 00.85rem;
+  color: #666;
+}
+
+.titleHead {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-family: inherit;
+  color: #666;
+}
+
+.ulClass {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.subList2 ul {
+  display: block;
+}
+.finalList {
+  font-family: inherit;
+  padding-bottom: 5px;
+  list-style: none;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+#lastFoot {
+  height: 45px;
+  background: #fd7685;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 1rem;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* footer css ending  */
